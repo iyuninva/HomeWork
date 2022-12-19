@@ -4,7 +4,7 @@
 // a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
 
-Console.WriteLine("Добрый день!");
+Console.WriteLine("Добрый день! Задача №2");
 
 Console.Write("Введите число №1: ");
 int a = Convert.ToInt32(Console.ReadLine());
