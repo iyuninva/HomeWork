@@ -3,11 +3,15 @@
 Console.WriteLine("Добрый день! Задача №10");
 Console.WriteLine("Введите трехзначное число:");
 int a = Convert.ToInt32(Console.ReadLine());
-if (a/100>0 & a/100<10)
+if (a >= 100 & a < 1000)
 {
-	Console.WriteLine("Вторая цифра трехзначного числа: " +a/10%10);
+	    Console.WriteLine("Вторая цифра трехзначного числа: " + a / 10 % 10);
+}
+else if (a <= -100 & a > -1000)
+{
+	    Console.WriteLine("Вторая цифра трехзначного числа: " + -a / 10 % 10);
 }
 else
 {
-	Console.WriteLine("Error: Введите трехзначное число!");
+Console.WriteLine("Error: Введите трехзначное число!");
 }

@@ -13,11 +13,9 @@ int b = Convert.ToInt32(Console.ReadLine());
 
 if (a > b)
 {
-    Console.WriteLine("Максимальное число №1 равное: " + a);
-    Console.WriteLine("Минимальное число №2 равное: " + b);
+    Console.WriteLine(a + " > " + b);
 }
 else
 {
-    Console.WriteLine("Максимальное число №2 равное: " + b);
-    Console.WriteLine("Минимальное число №1 равное: " + a);
-}
+    Console.WriteLine(b + " > " + a);
+    }

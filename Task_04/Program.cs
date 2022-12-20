@@ -20,4 +20,4 @@ if (c > max)
 {
     max = c;
 }
-Console.WriteLine(max);
+Console.WriteLine("Максимальное из трех чисел: " + max);
