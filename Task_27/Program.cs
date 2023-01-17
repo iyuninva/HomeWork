@@ -3,19 +3,28 @@
 // 82 -> 10
 // 9012 -> 12
 
-
-int[] ArraySum(int[] array)
+int SumNumber(int numberInt, int len)
 {
-    
-    for(int i = 0; i < array.Length; i++)
+    int sum = 0;
+    for (int i = 0; i < len; i++)
     {
-        array[i] = number[i];
+        sum += numberInt % 10;
+        numberInt /= 10;
     }
-    return array;
+    return sum;
 }
 
-Console.WriteLine("Введите число: ");
+Console.Write("Введите число: ");
 int numberInt = Convert.ToInt32(Console.ReadLine());
-string number = Convert.ToString(numberInt);
-int[] array = new int[number.Length];
-Console.WriteLine(ArraySum(array));
+string numberStr = Convert.ToString(numberInt);
+
+int len = numberStr.Length;
+
+int sum = SumNumber(numberInt, len);
+
+Console.WriteLine();
+Console.WriteLine($"Результатом вычеслений, является: {sum}");
+
+Console.WriteLine();
+Console.Write("Нажмите Enter для завершения программы ");
+Console.ReadLine();
