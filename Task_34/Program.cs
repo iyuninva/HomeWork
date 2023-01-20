@@ -51,14 +51,18 @@ void ThreeNumbers(int[] array)
 // Ввод с клавиатуры длины массива:
 Console.Write("Нажмите Enter для запуска программы: ");
 Console.ReadLine();
-
 Console.Write("Введите длину массива: ");
 int length = Convert.ToInt32(Console.ReadLine());
 int[] array = ArrayRandom(length);
 
+// Вывод массива в консоль:
 Console.WriteLine();
 Console.WriteLine("Случайный массив из трехзначных положительных чисел: " + (string.Join(", ", array)));
+Console.WriteLine();
 ThreeNumbers(array);
 
+// Окончание программы:
+Console.Write("Нажмите Enter для завершения программы: ");
+Console.ReadLine();
 
 
