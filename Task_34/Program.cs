@@ -27,19 +27,21 @@ void ThreeNumbers(int[] array)
         {
             EvenNumber[j] = array[j];
             Evencount++;
+
+            if (EvenNumber[j] != 0)
+            {
+                Console.WriteLine("Четное число: " + EvenNumber[j]);
+            }
         }
         else
         {
             NotEvenNumber[j] = array[j];
             NotEvencount++;
-        }
-        if (EvenNumber[j] != 0)
-        {
-            Console.WriteLine("Четное число: " + EvenNumber[j]);
-        }
-        if (array[j] % 2 != 0 & array[j] % 2 > 0)
-        {
-            Console.WriteLine("Нечетное число: " + NotEvenNumber[j]);
+            
+            if (array[j] % 2 != 0 & array[j] % 2 > 0)
+            {
+                Console.WriteLine("Нечетное число: " + NotEvenNumber[j]);
+            }
         }
     }
     Console.WriteLine();

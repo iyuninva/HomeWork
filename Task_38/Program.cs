@@ -6,7 +6,7 @@ void ArrayDoubleRandom(double[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = new Random().NextDouble();
+        array[i] = Math.Round(new Random().NextDouble(), 3);
     }
 }
 // Метод вычесления разницы минимального и максимального числа: 
@@ -30,9 +30,7 @@ void Method(double[] array)
             positionMin = i;
         }
     }
-    Console.WriteLine();
     Console.WriteLine($"Максимальное число на позиции №{positionMax}: {MaxNumber}");
-    Console.WriteLine();
     Console.WriteLine($"Минимальное число на позиции №{positionMin}: {MinNumber}");
     Console.WriteLine();
     Console.WriteLine($"Разница между максимальным и минимальным элементов массива составляет: {MaxNumber - MinNumber}");
