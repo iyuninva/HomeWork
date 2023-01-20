@@ -10,7 +10,7 @@ void ArrayRandom(int[] array)
         array[i] = new Random().Next(-1000, 1001);
     }
 }
-// Метод вычесления суммы чисел на нечетных позициях:
+// Метод вычесления суммы чисел на нечетных позициях: 
 void Method(int[] array)
 {
     int sum = 0;
