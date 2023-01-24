@@ -69,14 +69,15 @@ int N = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine();
 int[,] Array = new int[M, N];
 FillArray(Array, M, N);
+
 // Передача данных в метод вывода на экран:
 PrintArray(Array, M, N);
 
 // Выбор числа из диапазона массива:
 Console.WriteLine();
-Console.Write($"Введите номер строки элемента массива M от 0 до {M-1}: ");
+Console.Write($"Введите номер строки элемента массива от 0 до {M-1}: ");
 int NumberM = Convert.ToInt32(Console.ReadLine());
-Console.Write($"Введите номер столбца элемента массива N от 0 до {N-1}: ");
+Console.Write($"Введите номер столбца элемента массива от 0 до {N-1}: ");
 int NumberN = Convert.ToInt32(Console.ReadLine());
 PositionSelection(Array, NumberM, NumberN, M, N);
 
