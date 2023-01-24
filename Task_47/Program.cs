@@ -4,7 +4,7 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
-
+// Метод заполнения массива:
 void FillArray(int M, int N)
 {
     double[,] Array = new double[M, N];
@@ -19,7 +19,7 @@ void FillArray(int M, int N)
     }
     PrintArray(Array, M, N);
 }
-
+// Метод вывода массива на экран:
 void PrintArray(double[,] Array, int M, int N)
 {
     for (int k = 0; k < M; k++)
@@ -32,7 +32,7 @@ void PrintArray(double[,] Array, int M, int N)
     }
 }
 
-// Ввод с клавиатуры длины массива:
+// Ввод диапазона массива:
 Console.Write("Нажмите Enter для запуска программы: ");
 Console.ReadLine();
 Console.Write("Введите колличество строк двумерного массива M: ");
@@ -46,3 +46,4 @@ FillArray(M, N);
 Console.WriteLine();
 Console.Write("Нажмите Enter для завершения программы: ");
 Console.ReadLine();
+
