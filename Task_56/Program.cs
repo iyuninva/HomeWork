@@ -73,7 +73,7 @@ void PrintNumberString(int[] SumString)
 // Ввод в программу:
 Console.Write("нажмите Enter для запуска программы: ");
 Console.ReadLine();
-int[,] Array = new int[new Random().Next(3, 5), new Random().Next(3, 5)];
+int[,] Array = new int[new Random().Next(2, 5), new Random().Next(2, 5)];
 ArrayRandom(Array);
 
 // Окончание программы:
