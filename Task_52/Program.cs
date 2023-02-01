@@ -14,9 +14,7 @@ void FillArray(int M, int N)
         for (int j = 0; j < N; j++)
         {
             Array[i, j] = new Random().Next(1, 11);
-            // Console.Write(Array[i, j] + " ");
         }
-        // Console.WriteLine();
     }
     PrintArray(Array, M, N);
     Average(Array, M, N);
